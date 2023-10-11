@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body ng-controller="randController" class="d-flex align-items-center justify-content-center vh-100">
+<div class="container text-center rounded p-3 div-content col-lg-4  col-11 p-lg-3 mx-auto position-relative">
+  <p class="title">Advice #{{ advices.id }}</p>
+  <p class="advice">"{{ advices.advice }}"</p>
+
+  <div class="d-block d-xs-none mb-4">
+    <img src="images/pattern-divider-mobile.svg" alt="Image pour écrans mobiles" class="img-fluid">
+  </div>
+
+  <button type="button" class="button position-absolute bottom-0 start-50 translate-middle-x" style="margin-bottom: -25px;" ng-click="loadNewAdvice()">
+    <img src="images/icon-dice.svg" alt="" class="img-fluid">
+  </button>
+
+  <div class="d-none d-xs-block mb-4">
+    <img src="images/pattern-divider-desktop.svg" alt="Image pour grands écrans" class="img-fluid">
+  </div>
+</div>
+
+<div id="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/julienbouze">Julien Bouze</a>.
+  </div>
+</body>
+</html>

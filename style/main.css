@@ -1,0 +1,48 @@
+#attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color : white;
+  text-align: center;
+  padding: 10px;
+  font-size : 0.6rem;
+}
+
+#attribution a {
+    color : hsl(150, 100%, 66%);
+
+}
+
+body{
+    background-color : hsl(217, 19%, 24%);
+    font-family :'Manrope';
+}
+.div-content{
+    background-color : hsl(217, 19%, 38%);
+}
+.title{
+    color : hsl(150, 100%, 66%);
+    font-size : 0.7rem;
+    text-transform : uppercase;
+    font-weight : bold;
+}
+.button{
+    background-color : hsl(150, 100%, 66%);
+    border : none;
+    transition : background-color 0.5s;
+    margin-bottom: -25px;
+    width : 50px;
+    height: 50px;
+    border-radius : 50%;
+}
+.button:hover,.button:focus{
+    background-color : hsl(150, 100%, 55%);
+}
+.advice{
+    color : hsl(193, 38%, 86%);
+    font-weight : bold;
+    font-size : 1.5rem;
+}
+.svg-image {
+    fill: hsl(193, 38%, 86%);
+ }
